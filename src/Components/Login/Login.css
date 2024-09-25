@@ -1,0 +1,71 @@
+.loginParentDiv {
+  width: 360px;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginParentDiv img {
+  margin-bottom: 20px;
+}
+
+.loginParentDiv label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.loginParentDiv .input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.loginParentDiv .input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+  outline: none;
+}
+
+.loginParentDiv button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0056b3;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.loginParentDiv button:hover {
+  background-color: #004494;
+  transform: translateY(-2px);
+}
+
+.loginParentDiv a {
+  display: block;
+  margin-top: 20px;
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.loginParentDiv a:hover {
+  color: #003d7a;
+}

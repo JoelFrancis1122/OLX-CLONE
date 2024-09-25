@@ -1,0 +1,137 @@
+P.moreView {
+  margin: 16px 16px 24px;
+  padding: 16px 16px 32px;
+  background-color: #ebeeef;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heading :first-child {
+  font-size: 24px;
+  color: #002f34;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.heading :last-child {
+  font-size: 14px;
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.heading :last-child:hover {
+  color: #0056b3;
+}
+
+.recommendations .cards {
+  display: flex;
+}
+
+.moreView .cards {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.moreView .cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  margin-right: 15px;
+  padding: 13px;
+  max-width: 222px;
+  width: 222px;
+  height: 280px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card .favorite {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card .image img {
+  height: 100px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.card .content .rate {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.card .content .kilometer {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.card .content .name {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.card .date {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: center; /* Center the text horizontally */
+  font-weight: 500;
+  margin-top: 8px; /* Adds spacing above the date */
+  white-space: nowrap; /* Prevents the date from wrapping to a new line */
+  overflow: hidden; /* Ensures no overflow */
+  text-overflow: ellipsis; /* Adds ellipsis if the text overflows */
+  width: 100%; /* Ensures it takes the full width of the container */
+
+}
+
+
+.recommendations {
+  margin: 16px 16px 24px;
+}
+
+.recommendations .heading span {
+  font-size: 24px;
+  color: #002f34;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
